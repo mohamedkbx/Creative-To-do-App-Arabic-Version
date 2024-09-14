@@ -5,6 +5,7 @@ const todoList = document.querySelector(".todo-list");
 
 //Event Listeners
 addButton.addEventListener("click", addTodo);
+todoList.addEventListener("click", removeCheeck);
 
 //functions
 
@@ -36,4 +37,14 @@ function addTodo(event) {
 
   //clear input
   inputElement.value = "";
+  inputElement.focus();
+}
+
+function removeCheeck(e) {
+  const item = e.target;
+  //delete
+  if (item.classList[0] === "trash__button") {
+    const todo = item.parentElement;
+    todo.remove();
+  }
 }
