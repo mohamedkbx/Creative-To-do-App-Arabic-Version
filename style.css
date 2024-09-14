@@ -1,5 +1,66 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: "Sofadi One", system-ui;
   font-weight: 400;
   font-style: normal;
+
+  background: #f6e9a8;
+  background: linear-gradient(135deg, #f6e9a8, #bdc9d8);
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+header {
+  font-size: 1.7rem;
+  text-align: center;
+  margin-top: 2rem;
+  min-height: 20vh;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  gap: 1rem;
+  font-family: inherit;
+}
+
+.todo__input {
+  width: 40%;
+  padding: 1rem 2rem;
+  border: none;
+  box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  outline: none;
+}
+
+.todo__button {
+  cursor: pointer;
+  padding: 0.9rem 1rem;
+  border: none;
+  font-family: inherit;
+  font-weight: 700;
+  border-radius: 8px;
+  box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.2);
+  transition: all 0.3s;
+  color: #fcfcfc;
+  background: #373634;
+  background: linear-gradient(315deg, #373634, #010101);
+}
+
+.todo__button:hover {
+  background: #9d9b94;
+  background: linear-gradient(315deg, #9d9b94, #010101);
+}
+
+.todo__button:active {
+  transform: translateY(0.1rem);
 }
