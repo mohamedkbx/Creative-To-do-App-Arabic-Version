@@ -88,6 +88,7 @@ form {
   margin: 1rem;
   background-color: rgba(0, 0, 0, 0.1);
   padding: 0.3rem;
+  transition: all 0.2s ease;
 }
 
 .todo li {
@@ -117,4 +118,14 @@ form {
 .fa-trash,
 .fa-check {
   pointer-events: none;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.fall {
+  transform: translateY(8rem) rotateZ(20deg);
+  opacity: 0;
 }

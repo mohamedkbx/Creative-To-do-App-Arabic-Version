@@ -45,6 +45,14 @@ function removeCheeck(e) {
   //delete
   if (item.classList[0] === "trash__button") {
     const todo = item.parentElement;
-    todo.remove();
+    todo.classList.add("fall");
+    todo.addEventListener("transitionend", function () {
+      todo.remove();
+    });
+  }
+  //check
+  if (item.classList[0] === "complete__button") {
+    const todo = item.parentElement;
+    todo.classList.toggle("completed");
   }
 }
