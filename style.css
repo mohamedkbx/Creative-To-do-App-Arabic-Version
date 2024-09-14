@@ -10,9 +10,8 @@ body {
   font-family: "Sofadi One", system-ui;
   font-weight: 400;
   font-style: normal;
-
-  background: #f6e9a8;
-  background: linear-gradient(135deg, #f6e9a8, #bdc9d8);
+  background: #dfce61;
+  background: linear-gradient(135deg, #dfce61, #ffb21b);
   background-repeat: no-repeat;
   height: 100vh;
 }
@@ -50,7 +49,7 @@ form {
   font-weight: 700;
   border-radius: 8px;
   box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.2);
-  transition: all 0.3s;
+  transition: all 0.2s;
   color: #fcfcfc;
   background: #373634;
   background: linear-gradient(315deg, #373634, #010101);
@@ -62,5 +61,55 @@ form {
 }
 
 .todo__button:active {
-  transform: translateY(0.1rem);
+  transform: translateY(0.2rem);
+}
+
+.todo__container {
+  font-family: inherit;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+.todo-list {
+  list-style: none;
+  min-width: 40%;
+  margin-left: 6rem;
+}
+
+.todo {
+  display: flex;
+  font-size: 1.3rem;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 0.3rem;
+}
+
+.todo li {
+  flex: 1;
+}
+
+.complete__button {
+  font-size: 1rem;
+  border: none;
+  padding: 0.5rem;
+  color: #fcfcfc;
+  background: #4a884c;
+  background: linear-gradient(45deg, #4a884c, #6ecf76);
+  cursor: pointer;
+}
+
+.trash__button {
+  font-size: 1rem;
+  color: #fcfcfc;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  background: rgba(100, 107, 100, 1);
+  background: linear-gradient(45deg, rgba(100, 107, 100, 1), rgba(217, 31, 33, 1));
 }
